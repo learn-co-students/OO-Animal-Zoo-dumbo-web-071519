@@ -1,17 +1,17 @@
 class Animal
     @@all = []
-    attr_accessor :weight
-    attr_reader :species, :nickname, :zoo
+    attr_accessor :weight               #only method that needs to be able to change
+    attr_reader :species, :nickname, :zoo  #getters only
 
     def initialize(species, weight, nickname, zoo)
         @species = species
         @weight = weight
         @nickname = nickname
-        @@all << self
+        @@all << self    #passes the entire self into the class variable @@all
         @zoo = zoo
     end
 
-    def self.all
+    def self.all   #return on each individual instance at once 
         @@all
     end
 
@@ -19,10 +19,6 @@ class Animal
         @@all.select do |animal|
             animal.species == species
         end
-    end
-
-    def self.species
-        @species
     end
 
 end 
