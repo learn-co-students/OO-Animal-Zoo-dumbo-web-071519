@@ -22,9 +22,9 @@ class Zoo
     end
 
     def animal_species
-        self.animals.uniq do |animal|
+        self.animals.map do |animal|
             animal.species
-        end
+        end.uniq
     end
 
     def find_by_species(animal_species)
