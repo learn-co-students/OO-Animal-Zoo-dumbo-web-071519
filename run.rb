@@ -10,7 +10,8 @@ TheBronxZoo = Zoo.new("Bronx Zoo", "Bronx")
 
 Bunny = Animal.new("Bunny", 5, "Snowflake", Zootopia)
 Giraffe = Animal.new("Giraffe", 1800, "Jared", TheBronxZoo)
-Flamingo = Animal.new("Flamingo", 10, "Pinky", Zootopia)
+Pinky = Animal.new("Flamingo", 10, "Pinky", Zootopia)
+Friend = Animal.new("Flamingo", 15, "Friend", Zootopia)
 
 binding.pry
 puts "done"
