@@ -15,5 +15,8 @@ cat2 = Animal.new("cat", 1, "SMOL Boi", LA)
 dog2 = Animal.new("dog", 5000, "BIG BOI", NYC)
 cat3 = Animal.new("cat", 3, "MED BOI", west)
 lion = Animal.new("lion", 150, "king", west)
+
+
+
 binding.pry
 puts "done"

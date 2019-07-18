@@ -12,7 +12,7 @@ class Zoo
         @@all
     end
 
-    def self.find_by_location(location)
+    def self.find_by_location(location)  #deliverables asks for a class method so 
         @@all.select do |zoo|
             zoo.location == location
         end
@@ -25,8 +25,7 @@ class Zoo
     end
 
     def animal_species
-        animalArr = self.animals.map do |animal| animal.species end
-        animalArr.uniq
+        animalArr = self.animals.map do |animal| animal.species end.uniq
     end
 
     def animal_nicknames
@@ -34,10 +33,10 @@ class Zoo
     end
 
     def find_by_species(species)
-        self.animals.select do |animal|
+        self.animals.select do |animal|    #calls self.animals bc using animals as helper method
             animal.species == species
         end
     end
-
-    
 end
+
+
