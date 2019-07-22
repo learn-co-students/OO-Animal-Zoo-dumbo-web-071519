@@ -30,8 +30,14 @@ class Animal
         @@all
     end
 
-    def find_by_species
+    def zoo
+        @zoo
+    end
 
+    def self.find_by_species(species)
+        Animal.all.select do |animal|
+            animal.species == species
+        end
     end
 
 end
